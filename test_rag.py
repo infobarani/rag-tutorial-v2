@@ -1,5 +1,8 @@
 from query_data import query_rag
 from langchain_community.llms.ollama import Ollama
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action='ignore', category=DeprecationWarning)
 
 EVAL_PROMPT = """
 Expected Response: {expected_response}
