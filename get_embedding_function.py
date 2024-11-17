@@ -2,6 +2,6 @@ from langchain_community.embeddings.ollama import OllamaEmbeddings
 from langchain_community.embeddings.bedrock import BedrockEmbeddings
 
 
-def get_embedding_function(model="bge-large"):
-    embeddings = OllamaEmbeddings(model="bge-large")
+def get_embedding_function(model="nomic-embed-text"):
+    embeddings = OllamaEmbeddings(model="nomic-embed-text")
     return embeddings
